@@ -1,0 +1,152 @@
+.main-landing-section{
+    /* width: 100%; */
+    height: 100%;
+    margin: 50px;
+}
+.navbar-section{
+    /* width: 100%; */
+    height: 10vh;
+    display: flex;
+    margin: 50px;
+    margin-top: 40px;
+    font-size: 18px;
+    margin-bottom: 10px;  
+}
+.logo1{
+color: #53A3C7;
+}
+.logo2{
+color: #F7BF69
+}
+.logo3{
+color: #BE252E;
+}
+.rightbar-main-content{
+    width: 70%;
+}
+.landing-image{
+    width: 50rem;
+    /* margin-left: 10%; */
+}
+.section1-inner-div{
+    display: flex;
+    height: 100vh;
+    margin: 50px; 
+    
+    margin-top: 5px;
+    font-family: "Alata-Regular";
+    justify-content: space-between;
+    text-align: justify;
+    align-items: center;
+   
+    
+}
+.rightbar-main-div{
+    width: 30%;
+}
+.rightbar-title{
+    font-size: 32px;
+}
+.rightbar-pera{
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: "Alata-Regular";
+}
+#section2-landingpage{
+/*  */
+    margin: 50px;
+    text-align: center;
+   
+}
+.main-text-section2{
+    font-family:"Alata-Regular";
+    font-size: 48px;
+    margin-top: 10%;
+}
+#section3-landingpage{
+    /*  */
+        margin: 50px; 
+        margin-top: 10%;
+    }
+    .section3-main-content{
+        font-family:"Alata-Regular";
+    font-size: 48px;
+    margin-top: 10%;
+    margin: 50px;
+    }
+    .section4-landing-page{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .content{
+        text-align: center;
+        font-size: 24px;
+        width: 80%;
+        font-family:"Alata-Regular";
+    }
+   .landing-section4-content{
+    font-size: 28px;
+    text-align: center;
+font-family:"Alata-Regular";
+margin-top: 50px;
+word-spacing: 5px;
+   }
+   .text-box1{
+    width: 20%;
+    font-size: 28px;
+    width: 20%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+text-align: center;
+    background-color: #BE252E;
+    color: white;
+   }
+   .text-box2{
+    width: 20%;
+padding-top: 50px;
+padding-bottom: 50px;
+font-size: 28px;
+padding-left: 20px;
+    padding-right: 20px;
+text-align: center;
+
+    background-color: #53A3C7;
+    color: white;
+   }
+     .section5-content-box{
+        display: flex;
+        margin-top: 40px;
+        justify-content: space-evenly;
+     } 
+     #section6-landingpage{
+        margin-top: 10%;
+     }
+     .section6-content{
+        font-size: 40px;
+        font-family:"Alata-Regular";
+        margin: 50px;
+        text-align: center;
+     }
+     .section6-button{
+        padding: 15px;
+        width: 10%;
+        text-align: center;
+        background-color: #53A3C7;
+        color: white;
+        font-size: 24px;
+        text-decoration: none;
+        margin-left: 45%;
+        border-radius: 20px;
+        margin-bottom: 50px;
+     }
+     .icon-img{
+        text-align: center;
+        width: 50%;
+        margin-left: 50px;
+        margin-bottom: 10px;
+     }
+     .text-color{
+        color: #BE252E;
+     }
