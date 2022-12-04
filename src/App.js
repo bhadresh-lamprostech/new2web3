@@ -2,8 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import "rsuite/dist/rsuite.css";
+
 import Navbar from "./components/Navbar";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
+
 // import { Steps, Panel, Placeholder, ButtonGroup, Button } from "rsuite";
 // import landingpage from "./components/LandingPage.js";
 import LandingPage from './components/LandingPage.js';
@@ -69,12 +71,12 @@ function App() {
     <div className="App">
       <WagmiConfig client={client}>
           <Navbar></Navbar>
-        <Router>
+        <HashRouter hashType="slash" >
           <Routes>
-            <Route path="/" element={<LandingPage />}></Route>
-            <Route path="/metamask" element={<Covalent />}></Route>
+            <Route exact path="/" element={<LandingPage />}></Route>
+//             <Route path="/metamask" element={<Covalent />}></Route>
           </Routes>
-        </Router>
+        </HashRouter>
       </WagmiConfig>
     
     </div>
