@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import worldcoin1 from "../assests/images/Worldcoin1.png";
 import worldcoin2 from "../assests/images/Worldcoin2.png";
 import { WorldIDWidget } from "@worldcoin/id";
@@ -31,6 +31,7 @@ function Worldcoin() {
         And that’s it! Your human verification is now complete!
       </p>
       <div className="connect-wallet">
+        <h3 className="wordlcoin-turimg"> Trxy it with Your self </h3>
         {/* <button className='connect-btn'>Worldcoin Verification</button> */}
         <WorldIDWidget
           actionId="wid_BPZsRJANxct2cZxVRyh80SFG" // obtain this from developer.worldcoin.org
@@ -47,4 +48,4 @@ function Worldcoin() {
   );
 }
 
-export default Worldcoin
+export default Worldcoin;

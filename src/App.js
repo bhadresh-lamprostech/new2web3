@@ -26,6 +26,7 @@ import NftPort from './components/NftPort';
 import Worldcoin from './components/Worldcoin';
 import PushProtocol from './components/PushProtocol';
 import FatchNFT from './components/FatchNFT';
+import Covalent from './components/Covalent';
 
 const { chains, provider, webSocketProvider } = configureChains(defaultChains, [
   alchemyProvider({ apiKey: 'yourAlchemyApiKey' }),
@@ -71,7 +72,7 @@ function App() {
         <Router>
           <Routes>
             <Route path="/" element={<LandingPage />}></Route>
-            {/* <Route path="/metamask" element={<FatchNFT />}></Route> */}
+            <Route path="/metamask" element={<Covalent />}></Route>
           </Routes>
         </Router>
       </WagmiConfig>

@@ -1,6 +1,6 @@
 import React from "react";
 import push1 from "../assests/images/Push1.png";
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from "react";
 import { useAccount } from "wagmi";
 import axios from "axios";
 import { ethers } from "ethers";
@@ -11,41 +11,36 @@ const Poo_contract_address = "0x17a94A57b9398dF5Ba47231E9523e71196c0eC50";
 const provider = new ethers.providers.Web3Provider(window.ethereum);
 const signer = provider.getSigner();
 
-
 function NftPort() {
   var imageUri = "";
   var metdataUri = "";
   const { address } = useAccount();
 
-   const [selectedFile, setSelectedFile] = useState();
-   const [preview, setPreview] = useState();
+  const [selectedFile, setSelectedFile] = useState();
+  const [preview, setPreview] = useState();
 
-   useEffect(() => {
-     if (!selectedFile) {
-       setPreview(undefined);
-       return;
-     }
+  useEffect(() => {
+    if (!selectedFile) {
+      setPreview(undefined);
+      return;
+    }
 
-     const objectUrl = URL.createObjectURL(selectedFile);
-     setPreview(objectUrl);
+    const objectUrl = URL.createObjectURL(selectedFile);
+    setPreview(objectUrl);
 
-     // free memory when ever this component is unmounted
-     return () => URL.revokeObjectURL(objectUrl);
-   }, [selectedFile]);
+    // free memory when ever this component is unmounted
+    return () => URL.revokeObjectURL(objectUrl);
+  }, [selectedFile]);
 
-   const onSelectFile = (e) => {
-     if (!e.target.files || e.target.files.length === 0) {
-       setSelectedFile(undefined);
-       return;
-     }
+  const onSelectFile = (e) => {
+    if (!e.target.files || e.target.files.length === 0) {
+      setSelectedFile(undefined);
+      return;
+    }
 
-     // I've kept this example simple by using the first image instead of multiple
-     setSelectedFile(e.target.files[0]);
-   };
-
-  
-  
-  
+    // I've kept this example simple by using the first image instead of multiple
+    setSelectedFile(e.target.files[0]);
+  };
 
   const mintCertificate = async (e) => {
     e.preventDefault();
@@ -111,10 +106,7 @@ function NftPort() {
       });
 
     const mintNft = new ethers.Contract(Poo_contract_address, Poo.abi, signer);
-    const mintNFT = await mintNft.safeMint(
-      address,
-      metdataUri
-    );
+    const mintNFT = await mintNft.safeMint(address, metdataUri);
     console.log(mintNFT);
   };
   return (
@@ -157,7 +149,7 @@ function NftPort() {
             <div className="description">
               <input type="text" placeholder="name" id="description" />
             </div>
-            <button>Submit</button>
+            <button className="mint-nft"> Mint Nft</button>
           </form>
         </div>
       </div>

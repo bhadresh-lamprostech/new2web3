@@ -21,7 +21,9 @@ function LandingPage() {
             <h1 className="rightbar-title">
               Take the first step in your Web3 Journey!
             </h1>
-            <p className="rightbar-pera"> Set up your wallet and let’s go!</p>
+            <p className="rightbar-pera">
+              Complete this 12-step guide to start your Web3 journey!
+            </p>
           </div>
           <div className="rightbar-main-content">
             <img src={landingImg} className="landing-image" />{" "}
