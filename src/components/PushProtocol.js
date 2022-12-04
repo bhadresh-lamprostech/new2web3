@@ -1,7 +1,7 @@
 import React from 'react'
 import push1 from "../assests/images/Push1.png";
 import push2 from "../assests/images/Push2.png";
-import { Chat } from "@pushprotocol/uiweb";
+// import { Chat } from "@pushprotocol/uiweb";
 import {useAccount} from 'wagmi'
 
 function PushProtocol() {
