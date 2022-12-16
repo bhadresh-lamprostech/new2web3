@@ -5,44 +5,54 @@ import { WorldIDWidget } from "@worldcoin/id";
 
 function Worldcoin() {
   return (
-    <div className="metamask-section1">
-      <h1 className="metamask-title">Worldcoin</h1>
-      <h2 className="metamask-small-title">
-        After getting a human-friendly name, let’s complete the human
-        verification of your wallet.
-      </h2>
-      <p className="metamask-content">
-        Some dApps require you to complete this step as a way to make sure that
-        you as a user can perform a certain action only once.
-      </p>
+    <div className="metamask-main-div">
+      <div className="metamask-section1">
+        <h1 className="metamask-title">Worldcoin</h1>
+        <h2 className="metamask-small-title">
+          After getting a human-friendly name, let’s complete the human
+          verification of your wallet.
+        </h2>
+        <p className="metamask-content">
+          Some dApps require you to complete this step as a way to make sure
+          that you as a user can perform a certain action only once.
+        </p>
 
-      <p className="metamask-content">
-        Doing this human verification is quite simple!
-      </p>
+        <p className="metamask-content">
+          Doing this human verification is quite simple!
+        </p>
 
-      <p className="metamask-content">
-        You can easily and anonymously verify they are a unique human through
-        the Worldcoin app.
-      </p>
-      <img src={worldcoin1} className="metamask-img" />
-      <img src={worldcoin2} className="metamask-img" />
+        <p className="metamask-content">
+          You can easily and anonymously verify they are a unique human through
+          the{" "}
+          <a href="https://worldcoin.org/download" className="accent-color">
+            {" "}
+            Worldcoin app.
+          </a>
+        </p>
+        <div className="mm-img">
+          <img src={worldcoin1} className="metamask-img" />
+        </div>
+        <div className="mm-img">
+          <img src={worldcoin2} className="metamask-img" />
+        </div>
 
-      <p className="metamask-content">
-        And that’s it! Your human verification is now complete!
-      </p>
-      <div className="connect-wallet">
-        <h3 className="wordlcoin-turimg"> Trxy it with Your self </h3>
-        {/* <button className='connect-btn'>Worldcoin Verification</button> */}
-        <WorldIDWidget
-          actionId="wid_BPZsRJANxct2cZxVRyh80SFG" // obtain this from developer.worldcoin.org
-          signal="my_signal"
-          enableTelemetry
-          onSuccess={(verificationResponse) =>
-            console.log(verificationResponse)
-          } // pass the proof to the API or your smart contract
-          onError={(error) => console.error(error)}
-          debug={true} // to aid with debugging, remove in production
-        />
+        <p className="metamask-content">
+          And that’s it! Your human verification is now complete!
+        </p>
+        <div className="connect-wallet">
+          <div className="wordlcoin-turimg"> Try it with Yourself </div>
+          {/* <button className='connect-btn'>Worldcoin Verification</button> */}
+          <WorldIDWidget
+            actionId="wid_BPZsRJANxct2cZxVRyh80SFG" // obtain this from developer.worldcoin.org
+            signal="my_signal"
+            enableTelemetry
+            onSuccess={(verificationResponse) =>
+              console.log(verificationResponse)
+            } // pass the proof to the API or your smart contract
+            onError={(error) => console.error(error)}
+            debug={true} // to aid with debugging, remove in production
+          />
+        </div>
       </div>
     </div>
   );

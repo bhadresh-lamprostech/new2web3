@@ -1,0 +1,35 @@
+.rs-steps-item-status-finish .rs-steps-item-icon-wrapper {
+  border-color: #53a3c7;
+}
+
+.rs-steps-item-status-finish .rs-steps-item-tail,
+.rs-steps-item-status-finish .rs-steps-item-title::after {
+  border-color: #53a3c7;
+}
+.rs-steps-item-status-process .rs-steps-item-icon-wrapper {
+  background-color: #53a3c7;
+  border-color: #53a3c7;
+  color: white;
+}
+.rs-steps-item-icon-wrapper {
+  color: #53a3c7;
+}
+.rs-btn:disabled,
+.rs-btn.rs-btn-disabled {
+  color: white;
+}
+.rs-btn:disabled,
+.rs-btn.rs-btn-disabled {
+  color: gray;
+}
+.rs-panel-header {
+  font-size: 25px;
+  color: black;
+}
+.rs-steps-horizontal {
+  padding: 20px;
+}
+.navbar-div {
+  margin-top: 30px;
+  margin: 20px;
+}

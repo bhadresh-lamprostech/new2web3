@@ -1,126 +1,166 @@
-.metamask-main-div{
-    width: auto;
-    height: auto;
-    overflow: hidden;
-    margin: 50px;
-    margin-top: 10px;
+.metamask-main-div {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  min-width: 200px;
+  max-width: 1700px;
+  margin: 0 auto;
 }
-.metamask-title{
-    margin: 0 auto;
-text-align: center;
-font-size: 40px;
-
-font-family:"Alata-Regular";
+.metamask-title {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Alata-Regular";
+  color: black;
+  padding-bottom: 20px;
 }
-.metamask-small-title{
-    /* text-align: center; */
-font-size: 25px;
-font-family:"Alata-Regular";
-text-align: justify;
-margin: 20px;
+.metamask-small-title {
+  font-size: 1.9rem;
+  font-family: "Alata-Regular";
+  text-align: justify;
+  padding-top: 20px;
 }
-.navbar-div{
-    margin-top: 30px;
-    margin: 20px;
+.p + p {
+  margin-top: 0px;
 }
-.metamask-content{
-    font-family:"Alata-Regular"; 
-    /* margin-top: 10px; */
-    /* width: 100%; */
-    margin: 20px;
-    /* margin: 10px; */
-    text-align: justify;
-    
-    
-    font-size: 18px;
+.metamask-content {
+  font-family: "Alata-Regular";
+  text-align: justify;
+  font-size: 1.3rem;
 }
-.metamask-img{
-    width: 75%;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-left: 15%;
+.metamask-img {
+  width: 100%;
 }
-.connect-wallet{
-   margin: 0 auto;
-   margin-top: 30px;
-   margin-left: 40%;
-   
+.metamask-section1 {
+  line-height: 40px;
+  color: black;
+  padding-top: 20px;
+  text-align: justify;
+  font-family: "Alata-Regular";
 }
-.connect-btn{
-margin: 0 auto;
-padding: 10px 40px ;
-color: white !important;
-background-color:#53A3C7;
-font-size: 24px;
-border-radius: 20px;
-
+.metamask-section2 {
+  line-height: 40px;
+  color: black;
+  padding-top: 20px;
+  text-align: justify;
+  font-family: "Alata-Regular";
 }
-.button-group{
-    margin-bottom: 20px;
-    margin-left: 20px;
+.metamask-section3 {
+  line-height: 40px;
+  color: black;
+  padding-top: 20px;
+  text-align: justify;
+  font-family: "Alata-Regular";
 }
-.nftport-box{
-    border: 1px solid black;
-    width: 40%;
-    margin: 0 auto;
-    padding: 30px;
-    margin-top: 50px;
+.mm-img {
+  min-width: 200px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
-.nft-img{
-    width: 70%;
-    height: auto;
-    margin: 0 auto;
-    margin-left: 20%;
-
+.mm-img1 {
+  min-width: 200px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 5%;
+  padding-bottom: 20px;
 }
-:hover.step-btn{
-    color: white;
-    background-color: #53A3C7;
+.connect-wallet {
+  margin: 0 auto;
+  min-width: 200px;
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
 }
-.steps{
-    color: white;
-    background-color: #53A3C7;
+.c-jYjTbW {
+  width: 100%;
 }
-.metamask-span{
-text-decoration: underline;
+.connect-btn {
+  margin: 0 auto;
+  padding: 10px 40px;
+  color: white !important;
+  background-color: #53a3c7;
+  font-size: 24px;
+  border-radius: 20px;
 }
-.bottom-line{
-    font-weight: 700;
+.button-group {
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
-.metamask-dummy-ss{
-    width: 50%;
-    margin-left: 25%;
+.nftport-box {
+  border: 1px solid black;
+  width: 40%;
+  margin: 0 auto;
+  padding: 30px;
+  margin-top: 50px;
 }
-.nft-img-1{
-    width:200px;
-    height: 200px;
-    margin: 46px 56px 45px 42px
-
+.nft-img {
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  margin-left: 20%;
 }
-.nft-card{
-    width: 300px;
-    height: 400px;
-    box-sizing: border-box;
-    border: solid black 2px;
-    border-radius: 10px;
+.accent-color {
+  color: blue !important;
+  text-decoration: underline !important;
 }
-.covalent-demo{
-    margin: 0 auto;
-    margin-left: 40%;
-
+.p + p {
+  margin-top: 0 !important;
 }
-.name-nftport{
-margin-bottom: 30px;
+.wordlcoin-turimg {
+  font-size: 1.3rem;
+  width: 23%;
 }
-.mint-nft{
-/* width: 30%; */
-/* padding: 20px; */
-background-color: #53A3C7;
-margin-top: 10px 20px;
-border-radius: 20px;
-color: white;
+.c-eUarye {
+  background-color: #53a3c7 !important;
 }
-.nftImage_Id{
-    background-color: #53A3C7;
-    margin-left: 20xp;
+:hover.step-btn {
+  color: white;
+  background-color: #53a3c7;
+}
+.steps {
+  color: white;
+  background-color: #53a3c7;
+}
+.metamask-span {
+  text-decoration: underline;
+}
+.bottom-line {
+  font-weight: 700;
+}
+.metamask-dummy-ss {
+  width: 50%;
+  margin-left: 25%;
+}
+.nft-img-1 {
+  width: 200px;
+  height: 200px;
+  margin: 46px 56px 45px 42px;
+}
+.nft-card {
+  width: 300px;
+  height: 400px;
+  box-sizing: border-box;
+  border: solid black 2px;
+  border-radius: 10px;
+}
+.covalent-demo {
+  margin: 0 auto;
+  margin-left: 40%;
+}
+.name-nftport {
+  margin-bottom: 30px;
+}
+.mint-nft {
+  /* width: 30%; */
+  /* padding: 20px; */
+  background-color: #53a3c7;
+  margin-top: 10px 20px;
+  border-radius: 20px;
+  color: white;
+}
+.nftImage_Id {
+  background-color: #53a3c7;
+  margin-left: 20px;
 }

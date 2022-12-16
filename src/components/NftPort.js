@@ -110,47 +110,49 @@ function NftPort() {
     console.log(mintNFT);
   };
   return (
-    <div className="metamask-section1">
-      <h1 className="metamask-title">NFT Port</h1>
+    <div className="metamask-main-div">
+      <div className="metamask-section1">
+        <h1 className="metamask-title">NFT Port</h1>
 
-      <p className="metamask-content">
-        NFTPort is the Stripe for NFTs: one-stop, simple NFT Infrastructure and
-        APIs for developers to bring NFT applications to market in hours instead
-        of months.
-      </p>
-      <p className="metamask-content">
-        Start by going to the ENS app and connecting your wallet.
-      </p>
-      <p className="metamask-content">
-        NFTPort takes care of the infrastructure so that developers can focus on
-        building their application. NFTPort provides APIs for multi-chain NFT
-        data and NFT minting, together with out-of-the-box NFT search,
-        recommendations and detecting NFT counterfeits.
-      </p>
-      <p className="metamask-content">
-        NFTPort is used by 5000+ devs, including leading projects such as POAP
-        and Nifty Gateway. Built by a team of ex-NATO, Nvidia & Monese and
-        backed by the Co-Founders of Polygon, Skype & Wise.
-      </p>
-      <p className="metamask-content">
-        Basically, NFT Port is helping to mint your first NFT right now.
-      </p>
-      <p className="metamask-content">Go on & click Mint NFT button</p>
-      <div className="nftport-box">
-        <div>
-          <form onSubmit={mintCertificate}>
-            <div>
-              <input type="file" id="nftImage_id" onChange={onSelectFile} />
-              {selectedFile && <img className="nftimg" src={preview} />}
-            </div>
-            <div className="name">
-              <input type="text" placeholder="name" id="nftName" />
-            </div>
-            <div className="description">
-              <input type="text" placeholder="name" id="description" />
-            </div>
-            <button className="mint-nft"> Mint Nft</button>
-          </form>
+        <p className="metamask-content">
+          NFTPort is the Stripe for NFTs: one-stop, simple NFT Infrastructure
+          and APIs for developers to bring NFT applications to market in hours
+          instead of months.
+        </p>
+        <p className="metamask-content">
+          Start by going to the ENS app and connecting your wallet.
+        </p>
+        <p className="metamask-content">
+          NFTPort takes care of the infrastructure so that developers can focus
+          on building their application. NFTPort provides APIs for multi-chain
+          NFT data and NFT minting, together with out-of-the-box NFT search,
+          recommendations and detecting NFT counterfeits.
+        </p>
+        <p className="metamask-content">
+          NFTPort is used by 5000+ devs, including leading projects such as POAP
+          and Nifty Gateway. Built by a team of ex-NATO, Nvidia & Monese and
+          backed by the Co-Founders of Polygon, Skype & Wise.
+        </p>
+        <p className="metamask-content">
+          Basically, NFT Port is helping to mint your first NFT right now.
+        </p>
+        <p className="metamask-content">Go on & click Mint NFT button</p>
+        <div className="nftport-box">
+          <div>
+            <form onSubmit={mintCertificate}>
+              <div>
+                <input type="file" id="nftImage_id" onChange={onSelectFile} />
+                {selectedFile && <img className="nftimg" src={preview} />}
+              </div>
+              <div className="name">
+                <input type="text" placeholder="name" id="nftName" />
+              </div>
+              <div className="description">
+                <input type="text" placeholder="name" id="description" />
+              </div>
+              <button className="mint-nft"> Mint Nft</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
