@@ -33,3 +33,7 @@
   margin-top: 30px;
   margin: 20px;
 }
+.rs-btn-group:not(.rs-btn-group-vertical) > .rs-btn:not(:last-child) {
+  background-color: #53a3c7;
+  color: white;
+}

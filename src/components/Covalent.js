@@ -72,14 +72,17 @@ function Covalent() {
         </div>
         <div className="covalent-demo">
           <div>
-            <button onClick={() => getNft()} className="section6-button">
-              GetNft
-            </button>
             <div className="nft-card">
               <img className="nft-img-1" src={data.image} alt={data.image} />
               <h6 className="name-nftport">Name :{data.name}</h6>
-              <p>Description:{data.description}</p>
+              <h6 className="name-nftport">Description:{data.description}</h6>
             </div>
+            <button
+              onClick={() => getNft()}
+              className="section6-button get-nft"
+            >
+              GetNft
+            </button>
           </div>
         </div>
       </div>

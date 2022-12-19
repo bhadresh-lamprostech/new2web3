@@ -41,6 +41,7 @@ function Worldcoin() {
         </p>
         <div className="connect-wallet">
           <div className="wordlcoin-turimg"> Try it with Yourself </div>
+
           {/* <button className='connect-btn'>Worldcoin Verification</button> */}
           <WorldIDWidget
             actionId="wid_BPZsRJANxct2cZxVRyh80SFG" // obtain this from developer.worldcoin.org

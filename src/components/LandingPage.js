@@ -1,6 +1,6 @@
 import React from "react";
 import "../components/landingpage.css";
-import landingImg from "../assests/images/landingImg.jpg";
+import landingImg from "../assests/images/lp.png";
 import icon1 from "../assests/images/Picture1.png";
 import icon2 from "../assests/images/Picture2.png";
 import icon3 from "../assests/images/Picture3.png";

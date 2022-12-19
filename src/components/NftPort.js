@@ -138,21 +138,24 @@ function NftPort() {
         </p>
         <p className="metamask-content">Go on & click Mint NFT button</p>
         <div className="nftport-box">
-          <div>
-            <form onSubmit={mintCertificate}>
-              <div>
-                <input type="file" id="nftImage_id" onChange={onSelectFile} />
-                {selectedFile && <img className="nftimg" src={preview} />}
-              </div>
-              <div className="name">
-                <input type="text" placeholder="name" id="nftName" />
-              </div>
-              <div className="description">
-                <input type="text" placeholder="name" id="description" />
-              </div>
-              <button className="mint-nft"> Mint Nft</button>
-            </form>
-          </div>
+          <form onSubmit={mintCertificate} className="nft-form">
+            <div>
+              <input
+                type="file"
+                id="nftImage_id"
+                onChange={onSelectFile}
+                title=""
+              />
+              {selectedFile && <img className="nftimg" src={preview} />}
+            </div>
+            <div className="name">
+              <input type="text" placeholder="Name" id="nftName" />
+            </div>
+            <div className="description">
+              <input type="text" placeholder="Description" id="nftName" />
+            </div>
+            <button className="mint-nft"> Mint Nft</button>
+          </form>
         </div>
       </div>
     </div>

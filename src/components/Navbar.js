@@ -15,6 +15,7 @@ import Covalent from "./Covalent";
 import IpfsValist from "./IpfsValist";
 import Resources from "./Resources";
 import "../components/navbar.css";
+import Cookies from "universal-cookie";
 // import LandingPage from './LandingPage';
 
 function Navbar() {
@@ -29,6 +30,12 @@ function Navbar() {
   const onPrevious = () => onChange(step - 1);
 
   const goToStep = () => onChange(step);
+
+  const cookies = new Cookies();
+  const storeStep = step;
+
+  cookies.set("stepNum", { storeStep });
+  console.log(cookies.get("stepNum"));
 
   return (
     <>

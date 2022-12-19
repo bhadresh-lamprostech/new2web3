@@ -1,8 +1,17 @@
 import React from "react";
+import Confetti from "react-confetti";
 
 function Resources() {
   return (
     <div className="metamask-main-div">
+      <Confetti
+        width="1900px"
+        // height="1200px"
+        recycle={false}
+        numberOfPieces={500}
+        frictio={5}
+        className="confetti-div"
+      />
       <div className="metamask-section1">
         <h1 className="metamask-title">Congratulations!</h1>
         <h2 className="metamask-small-title">
